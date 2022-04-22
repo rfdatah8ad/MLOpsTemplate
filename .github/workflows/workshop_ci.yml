@@ -40,7 +40,7 @@ jobs:
       - name:  Create Pull Request to Main
         uses: thomaseizinger/create-pull-request@master
         with:
-          GITHUB_TOKEN: ${{ secrets.RENE_GITHUB_SECRET }} #setup: provide your github secret name
+          GITHUB_TOKEN: ${{ secrets.RENE_GITHUB_SECRET }} #setup: provide your github secret name adding comments
           head: ${{ github.ref }}
           base: main
           title: "An automatically created PR by successful CI to main"
